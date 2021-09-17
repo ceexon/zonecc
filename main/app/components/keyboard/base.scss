@@ -1,0 +1,34 @@
+$bg-dark-center: #A6A4A7;
+$bg-dark-mid: #676769;
+$bg-dark-ends: #595959;
+$base-shadow: #4D4D4D;
+
+.base-wrapper {
+  width: 850px;
+  max-width: 850px;
+  min-width: 850px;
+  height: 330px;
+  max-height: 330px;
+  min-height: 330px;
+  background-color: darken($color: $base-shadow, $amount: 10%);
+  border-radius: 1rem;
+  position: relative;
+  
+  .main {
+    background-color: $bg-dark-center;
+    background: linear-gradient(to right, $bg-dark-ends, $bg-dark-center, $bg-dark-ends);
+    border-radius: 1rem;
+    border: 3px solid darken($color: $base-shadow, $amount: 10%);
+    box-shadow: 0 12px 0 0 darken($color: $base-shadow, $amount: 20%);
+    width: 100%;
+    height: 100%;
+    padding: 0.85rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    .function-keys {
+      margin-bottom: 1rem;
+    }
+  }
+}
+

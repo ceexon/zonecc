@@ -1,0 +1,17 @@
+.main {
+  width: 100%;
+  .key-set {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    .set {
+      width: max-content;
+      display: flex;
+    }
+  }
+}

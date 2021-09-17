@@ -1,0 +1,43 @@
+<Keyboard::Row local-class="main">
+  <:left>
+    <div local-class="key-set">
+      <div local-class="set">
+        <Keyboard::Key @isLast={{true}}>
+          ESC
+        </Keyboard::Key>
+      </div>
+      <div local-class="set">
+        {{#each this.keySet1 as |item i|}}
+          <Keyboard::Key @isLast={{eq item "f4"}}>
+            {{item}}
+          </Keyboard::Key>
+        {{/each}}
+      </div>
+      <div local-class="set">
+        {{#each this.keySet2 as |item i|}}
+          <Keyboard::Key @isLast={{eq item "f8"}}>
+            {{item}}
+          </Keyboard::Key>
+        {{/each}}
+      </div>
+      <div local-class="set">
+        {{#each this.keySet3 as |item i|}}
+          <Keyboard::Key @isLast={{eq item "f12"}}>
+            {{item}}
+          </Keyboard::Key>
+        {{/each}}
+      </div>
+    </div>
+  </:left>
+  <:right>
+    <div local-class="key-set right">
+      <div local-class="set">
+        {{#each this.keySet4 as |item i|}}
+          <Keyboard::Key @textSize="sm" @isLast={{eq item "pause"}}>
+            {{item}}
+          </Keyboard::Key>
+        {{/each}}
+      </div>
+    </div>
+  </:right>
+</Keyboard::Row>

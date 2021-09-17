@@ -1,0 +1,11 @@
+$bg-dark-center: #A6A4A7;
+
+.keyboard-wrapper {
+  width: 1280px;
+  height: 720px;
+  margin: 100px auto;
+  background-color: lighten($color: $bg-dark-center, $amount: 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
