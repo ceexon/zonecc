@@ -1,3 +1,9 @@
 .main {
-  background-color: mediumturquoise;
+  width: 100%;
+
+  .keys {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }

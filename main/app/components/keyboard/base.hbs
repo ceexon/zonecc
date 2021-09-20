@@ -4,25 +4,11 @@
       <Keyboard::FunctionKeys />
     </div>
     <div local-class="other-keys">
-      <Keyboard::NormalKeys />
-      <Keyboard::NormalKeys />
-      <Keyboard::NormalKeys />
-      <Keyboard::NormalKeys />
+      <Keyboard::NormalKeys @keysRow="numbers" @lastLg={{true}} />
+      <Keyboard::NormalKeys @keysRow="tab" @lastMd={{true}} @firstMd={{true}} />
+      <Keyboard::NormalKeys @keysRow="caps" @lastLg={{true}} @firstLg={{true}} />
+      <Keyboard::NormalKeys @keysRow="shift" @lastXLg={{true}} @firstLg={{true}} />
       <Keyboard::SpaceBarRow />
     </div>
-  </div>
-
-  <div>
-    <div local-class="key" type="button">
-  <div>
-    <span local-class="text">
-      C
-    </span>
-    <div local-class="angle-shadow left-top top-section"></div>
-    <div local-class="angle-shadow right-top top-section"></div>
-    <div local-class="angle-shadow left-bottom bottom-section"></div>
-    <div local-class="angle-shadow right-bottom bottom-section"></div>
-  </div>
-</div>
   </div>
 </div>

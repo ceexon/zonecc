@@ -1,6 +1,22 @@
 <Keyboard::Row local-class="main">
   <:left>
-    Normal left 
+    <div local-class="keys">
+      {{#each this.keys as |item|}}
+        <Keyboard::Key
+          @buttonSize={{if (eq item "backspace") "w-lg"}}
+          @textStyle={{if (eq item "backspace") "sm-c"}}
+          @isLast={{eq item "backspace"}}
+        >
+          {{#if item.icon}}
+            {{svg-jar item.icon}}
+          {{else if item.symbols}}
+            {{item.symbols}}
+          {{else}}
+            {{item.key}}
+          {{/if}}
+        </Keyboard::Key>
+      {{/each}}
+    </div>
   </:left>
   <:right>
     Normal right

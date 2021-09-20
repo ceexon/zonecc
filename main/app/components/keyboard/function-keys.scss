@@ -12,6 +12,10 @@
     .set {
       width: max-content;
       display: flex;
+
+      &.esc {
+        width: 60px;
+      }
     }
   }
 }

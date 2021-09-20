@@ -1,6 +1,8 @@
-<button local-class="key {{@buttonSize}} {{if @isLast "last"}}">
-  <span local-class="content {{@textSize}}">
-    {{yield}}
+<button local-class="key {{@buttonSize}} {{if @isLast "last"}}" ...attributes>
+  <span local-class="content-wrapper">
+    <span local-class="content {{@textSize}} {{@textStyle}}">
+      {{yield}}
+    </span>
   </span>
   <span local-class="key-base"></span>
   <span local-class="glow"></span>

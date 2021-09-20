@@ -4,9 +4,9 @@ $bg-dark-ends: #595959;
 $base-shadow: #4D4D4D;
 
 .base-wrapper {
-  width: 850px;
-  max-width: 850px;
-  min-width: 850px;
+  width: 750px;
+  max-width: 750px;
+  min-width: 750px;
   height: 330px;
   max-height: 330px;
   min-height: 330px;
@@ -27,7 +27,7 @@ $base-shadow: #4D4D4D;
     flex-direction: column;
 
     .function-keys {
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
   }
 }
